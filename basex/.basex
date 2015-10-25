@@ -25,7 +25,7 @@ LOGMSGMAXLEN = 1000
 
 # HTTP Services
 WEBPATH = /Users/Christian/Repo/portal_co-creacion/basex/webapp
-RESTPATH = /Users/Christian/Repo/portal_co-creacion/basex/webapp/static/problem
+RESTPATH = /Users/Christian/Repo/portal_co-creacion/basex/webapp/static
 RESTXQPATH =  
 CACHERESTXQ = false
 HTTPLOCAL = false

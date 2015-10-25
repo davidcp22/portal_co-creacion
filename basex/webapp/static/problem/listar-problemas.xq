@@ -9,14 +9,14 @@ return
     <title>Lista de Problemas</title>
     <script type = "text/javascript" src = "/static/problem/js/funciones.js"></script>
     <script type = "text/javascript" src = "/static/problem/js/busqueda.js"></script>
-    <meta http-equiv="Refresh" content="url=?run=buscar-problema.xq"></meta>
-    <meta http-equiv="Refresh" content="url=?run=buscar-solucion.xq"></meta>
-    <meta http-equiv="Refresh" content="url=?run=home.xq"></meta>
+    <meta http-equiv="Refresh" content="url=?run=/problem/buscar-problema.xq"></meta>
+    <meta http-equiv="Refresh" content="url=?run=/problem/buscar-solucion.xq"></meta>
+    <meta http-equiv="Refresh" content="url=?run=/problem/home.xq"></meta>
   </head>
   <body>  
     
     <header>
-    <div><a href="?run=home.xq">Ir al home</a></div>
+    <div><a href="?run=/problem/home.xq">Ir al home</a></div>
     <a href="/static/auth/login.xml">Iniciar Sesión</a> 
     <a href="/static/auth/manage-account.xml">Registrarse</a> 
     <h1>PROBLEMAS</h1>

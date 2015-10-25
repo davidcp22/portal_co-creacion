@@ -5,7 +5,11 @@ Portal de co-creación
 * En la carpeta ```basex/bin``` ejecutar en:
 	* linux/MacOS ```basexhttp.sh ``` 
 	* Windows ```basexhttp.bat``` 
-* Sobre un servidor local ingresar a ```http://localhost:8984/rest/?run=home.xq```
+* Sobre un servidor local ingresar a la página inicial:
+	* ```http://localhost:8984/rest/?run=/problem/home.xq```
+* Funciones de administración
+	* Desabilitar usuario ```http://localhost:8984/rest/?run=disableUser.xq&user=[userName]```
+	* Eliminar problema ```http://localhost:8984/rest/?run=/admin/deleteProblem.xq&idProblem=[idProblem]```
 
 
 ## Configuraciones adicionales para una correcta ejecución (sobre Basex 8.3) ##

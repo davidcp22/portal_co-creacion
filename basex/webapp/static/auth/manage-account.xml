@@ -42,6 +42,7 @@
 				<name required="true"/>
 				<email required="true"/>
 				<password required="true" />
+				<enable>true</enable>
 			</account>
 		</xf:instance>
 		

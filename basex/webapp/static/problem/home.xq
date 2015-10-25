@@ -7,9 +7,9 @@ return
 <html>
   <head>
     <title>Home</title>
-    <meta http-equiv="Refresh" content="url=?run=listar-problemas.xq"></meta>
-    <meta http-equiv="Refresh" content="url=?run=buscar-problema.xq"></meta>
-    <meta http-equiv="Refresh" content="url=?run=buscar-solucion.xq"></meta>
+    <meta http-equiv="Refresh" content="url=?run=/problem/listar-problemas.xq"></meta>
+    <meta http-equiv="Refresh" content="url=?run=/problem/buscar-problema.xq"></meta>
+    <meta http-equiv="Refresh" content="url=?run=/problem/buscar-solucion.xq"></meta>
     <script type = "text/javascript" src = "/static/problem/js/funciones.js"></script> 
     <script type = "text/javascript" src = "/static/problem/js/busqueda.js"></script>
     <script type = "text/javascript" src = "/static/problem/js/problema.js"></script>
@@ -23,7 +23,7 @@ return
     <a href="/static/problem/editarProblema.xml">Crear nuevo problema</a> 
     <br/>
     <nav>
-      <div><a href="?run=listar-problemas.xq">Ver todos los problemas</a></div>
+      <div><a href="?run=/problem/listar-problemas.xq">Ver todos los problemas</a></div>
       <form name ="formFinder" method = "GET">
         <select name = "SelectOptionForSearch">
           <option value = "H1" seleced = "selected">Buscar problemas</option>
