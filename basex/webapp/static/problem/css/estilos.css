@@ -1,0 +1,58 @@
+p { color: black; font-family: Verdana; }
+
+
+<div>[posts] [post_title]
+<div class="d-card"><div class="d-img">
+[post_thumbnail class="p-img"]
+</div>
+<div class="d-text">
+<h4>[title]</h4>
+<p>[excerpt]
+</p>
+</div>
+<div class="d-text">
+</div></div>
+[/posts][nav prev_text="Next" next_text="Prev"]</div>
+
+
+
+
+.p-img{
+  width: 100%;
+  heigth: 100%;
+}
+.d-img{
+ width: 25%;
+ display: inline;
+ float: left;
+}
+.d-text{
+ display: inline;
+ width: 70%;
+ margin-top: 2%;
+ float: left;
+ margin-left: 20px;
+}
+.d-card{
+ border: 1px solid #e8e8e8;
+ float: left;
+ width: 100%;
+ background-color: #fcfcfc;
+ margin-bottom: 2%;
+        border-radius: 8px;
+}
+
+
+
+
+<div>[posts] 
+<div class="d-card"><div class="d-img">
+[post_thumbnail class="p-img"]
+</div>
+<div class="d-text">
+<h4>[post_title]</h4>
+<p>[excerpt]</p>
+</div>
+<div class="d-text">
+</div></div>
+[/posts][nav prev_text="Next" next_text="Prev"]</div>

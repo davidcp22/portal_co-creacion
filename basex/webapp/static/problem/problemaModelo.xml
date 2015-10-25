@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problem>
+	<id></id>
+	<category></category>
+	<title></title>
+	<description></description>
+	<user></user>
+	<attachment>
+	</attachment>
+	<attachment>
+	</attachment>
+	
+	<review>
+		<user></user>
+		<ranking></ranking>
+		<comment></comment>
+	</review>
+	
+	<review>
+		<user></user>
+		<ranking></ranking>
+		<comment></comment>
+	</review>
+	
+	<solution>
+		<title></title>
+		<description></description>
+		<user></user>
+		<attachment>
+		</attachment>
+		<attachment>
+		</attachment>
+		
+		<review>
+			<user></user>
+			<ranking></ranking>
+			<comment></comment>
+		</review>
+			
+	</solution>	
+	
+</problem>

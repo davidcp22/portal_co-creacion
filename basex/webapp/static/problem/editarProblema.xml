@@ -1,0 +1,52 @@
+<?xml-stylesheet href="xsltforms/xsltforms.xsl" type="text/xsl"?>
+<?xml-stylesheet href="xsltforms/xsltforms.xsl" type="text/xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xf="http://www.w3.org/2002/xforms">
+	<head>
+		<xf:model>
+			<xf:instance src="problemaModelo.xml"/>
+			<xf:submission id="guardar" method="PUT" replace="none">
+				<xf:resource value="concat('/rest/problem/', //id ,'.xml')"/>
+				<xf:reset ev:event="xforms-submit-done"/>
+				<xf:setvalue ev:event="xforms-submit-done" ref="problem/id" value="generateUUID()"/>
+			</xf:submission>
+		</xf:model>
+		<script language="javascript" type="text/javascript">
+			function generateUUID() {
+			var d = new Date().getTime();
+			var uuid = 'xxxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+				var r = (d + Math.random()*16)%16 | 0;
+				d = Math.floor(d/16);
+				return (c=='x' ? r : (r &amp; 0x3|0x8)).toString(16);
+			});
+			return uuid;
+			};
+		</script>
+	</head>
+	<body>
+		<div><a href="/rest/?run=home.xq">Ir al home</a></div>
+		<h1>Crear Problema </h1>
+		<xf:input ref="/problem/category">
+			<xf:label>Categoria: </xf:label>
+		</xf:input>
+		<br/>
+		<br/>
+		<xf:input ref="/problem/title">
+			<xf:label>Titulo del problema: </xf:label>
+		</xf:input>
+		<br/>
+		<br/>
+		<xf:input ref="/problem/user">
+			<xf:label>Tu usuario es: </xf:label>
+		</xf:input>
+		<br/>
+		<br/>
+		<xf:textarea ref="/problem/description">
+			<xf:label>Descripcion: </xf:label>
+		</xf:textarea>
+		<br/>
+		<br/>
+		<xf:submit submission="guardar">
+			<xf:label>Guardar</xf:label>
+		</xf:submit>
+	</body>
+</html>
