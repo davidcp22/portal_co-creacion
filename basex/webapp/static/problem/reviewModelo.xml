@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 		<review>
+			<creation-date></creation-date>
 			<user></user>
 			<ranking></ranking>
 			<comment></comment>

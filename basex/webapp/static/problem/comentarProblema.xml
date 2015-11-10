@@ -17,7 +17,9 @@
 		<div><a href="/rest/?run=/problem/home.xq">Ir al home</a></div>
 		<h1>Poner comentario </h1>
 	
-		
+		<xf:input ref="/problem/review/creation-date">
+			<xf:label>Fecha: </xf:label>
+		</xf:input>
 		<xf:input ref="/problem/review/user">
 			<xf:label>tu usuario es: </xf:label>
 		</xf:input>

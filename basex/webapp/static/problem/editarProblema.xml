@@ -26,9 +26,16 @@
 	<body>
 		<div><a href="/rest/?run=/problem/home.xq">Ir al home</a></div>
 		<h1>Crear Problema </h1>
+		<xf:input ref="/problem/creation-date">
+			<xf:label>Ingresa la fecha de hoy en formato DD/MM/AAAA: </xf:label>
+		</xf:input>
+		<br/>
+		<br/>
 		<xf:input ref="/problem/category">
 			<xf:label>Categoria: </xf:label>
 		</xf:input>
+		<br/>
+		<br/>
 		<xf:input ref="/problem/category">
 			<xf:label>Categoria2: </xf:label>
 		</xf:input>
