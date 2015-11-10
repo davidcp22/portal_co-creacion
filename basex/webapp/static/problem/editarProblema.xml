@@ -5,10 +5,10 @@
 		<xf:model>
 			<xf:instance src="problemaModelo.xml"/>
 
-			<xf:submission id="guardar" method="PUT" replace="none">
+			<xf:submission id="guardar" method="P0ST" replace="none">
 				<xf:reset ev:event="xforms-submit-done"/>
 				<xf:setvalue ev:event="xforms-submit" ref="/problem/id" value="generateUUID()"/>
-				<xf:resource value="concat('/rest/problem/', //id ,'.xml')"/>
+				<xf:resource value="concat(/rest/?run=/problem/problem/{$pid)"/>
 			</xf:submission>
 		</xf:model>
 		<script language="javascript" type="text/javascript">
@@ -28,6 +28,9 @@
 		<h1>Crear Problema </h1>
 		<xf:input ref="/problem/category">
 			<xf:label>Categoria: </xf:label>
+		</xf:input>
+		<xf:input ref="/problem/category">
+			<xf:label>Categoria2: </xf:label>
 		</xf:input>
 		<br/>
 		<br/>

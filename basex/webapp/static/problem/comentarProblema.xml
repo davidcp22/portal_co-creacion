@@ -1,0 +1,40 @@
+<?xml-stylesheet href="xsltforms/xsltforms.xsl" type="text/xsl"?>
+<?xml-stylesheet href="xsltforms/xsltforms.xsl" type="text/xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xf="http://www.w3.org/2002/xforms">
+	<head>
+		<xf:model>
+			<xf:instance src="problemaModelo.xml"/>
+
+			<xf:submission id="guardar" method="P0ST" replace="none">
+				<xf:reset ev:event="xforms-submit-done"/>
+				<xf:setvalue ev:event="xforms-submit" ref="/problem/id" value="generateUUID()"/>
+				<xf:resource value="concat(/rest/?run=/problem/problem/{$pid}/review)"/>
+			</xf:submission>
+		</xf:model>
+		
+	</head>
+	<body>
+		<div><a href="/rest/?run=/problem/home.xq">Ir al home</a></div>
+		<h1>Poner comentario </h1>
+	
+		
+		<xf:input ref="/problem/review/user">
+			<xf:label>tu usuario es: </xf:label>
+		</xf:input>
+		<br/>
+		<br/>
+		<xf:input ref="/problem/review/ranking">
+			<xf:label>Tu Puntuacion es: </xf:label>
+		</xf:input>
+		<br/>
+		<br/>
+		<xf:textarea ref="/problem/review/comment">
+			<xf:label>Por favor danos tu comentario: </xf:label>
+		</xf:textarea>
+		<br/>
+		<br/>
+		<xf:submit submission="guardar">
+			<xf:label>Guardar</xf:label>
+		</xf:submit>
+	</body>
+</html>
