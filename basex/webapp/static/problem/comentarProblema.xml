@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xf="http://www.w3.org/2002/xforms">
 	<head>
 		<xf:model>
-			<xf:instance src="problemaModelo.xml"/>
+			<xf:instance src="reviewModelo.xml"/>
 
 			<xf:submission id="guardar" method="P0ST" replace="none">
 				<xf:reset ev:event="xforms-submit-done"/>
