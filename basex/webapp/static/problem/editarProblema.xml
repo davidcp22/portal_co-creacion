@@ -8,6 +8,7 @@
 			<xf:submission id="guardar" method="P0ST" replace="none">
 				<xf:reset ev:event="xforms-submit-done"/>
 				<xf:setvalue ev:event="xforms-submit" ref="/problem/id" value="generateUUID()"/>
+				<xf:setvalue ev:event"xforms-submit" ref="/problem/creation-date" value="date()"/>
 				<xf:resource value="concat(/rest/?run=/problem/problem/{$pid)"/>
 			</xf:submission>
 		</xf:model>
@@ -22,13 +23,20 @@
 			return uuid;
 			};
 		</script>
+		<script language="javascript" type="text/javascript">
+			function date()
+			{
+				var f=new date();
+				return(f.getDate()+ "/" +(f.getMonth()+1)+ "/" + f.getFullYear())
+			}
+		
+		</script>
 	</head>
 	<body>
 		<div><a href="/rest/?run=/problem/home.xq">Ir al home</a></div>
 		<h1>Crear Problema </h1>
-		<xf:input ref="/problem/creation-date">
-			<xf:label>Ingresa la fecha de hoy en formato DD/MM/AAAA: </xf:label>
-		</xf:input>
+		<xf:input >
+		
 		<br/>
 		<br/>
 		<xf:input ref="/problem/category">
