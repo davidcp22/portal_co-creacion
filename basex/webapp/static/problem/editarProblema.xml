@@ -8,7 +8,7 @@
 			<xf:submission id="guardar" method="P0ST" replace="none">
 				<xf:reset ev:event="xforms-submit-done"/>
 				<xf:setvalue ev:event="xforms-submit" ref="/problem/id" value="generateUUID()"/>
-				<xf:setvalue ev:event"xforms-submit" ref="/problem/creation-date" value="date()"/>
+				<xf:setvalue ev:event="xforms-submit" ref="/problem/creation-date" value="date()"/>
 				<xf:resource value="concat(/rest/?run=/problem/problem/{$pid)"/>
 			</xf:submission>
 		</xf:model>
@@ -35,8 +35,7 @@
 	<body>
 		<div><a href="/rest/?run=/problem/home.xq">Ir al home</a></div>
 		<h1>Crear Problema </h1>
-		<xf:input >
-		
+	
 		<br/>
 		<br/>
 		<xf:input ref="/problem/category">
